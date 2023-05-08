@@ -1,0 +1,67 @@
+<style>
+    /* Set the background image of the body element */
+    body {
+      background-image: url('https://images.pexels.com/photos/1039105/pexels-photo-1039105.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  
+    /* Style the form elements */
+    form {
+      max-width: 400px;
+      padding: 20px;
+      background-color: #f6fc82;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      margin-left: 800px;
+      width: 50%;
+      height: 20%;
+    }
+  
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+      
+    }
+  
+    input[type="file"] {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    button[type="submit"],
+    button[type="button"] {
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  
+    button[type="submit"]:hover,
+    button[type="button"]:hover {
+      background-color: #3e8e41;
+    }
+  </style>
+  
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="image-upload">Choose Image:</label>
+    <input type="file" id="image-upload" name="image">
+    <br>
+    <button type="submit">Upload Image</button>
+    <button type="button" onclick="predict()">Predict</button>
+  </form>
+  
+  <script>
+    function predict() {
+      // Add code to perform prediction here
+      alert("Prediction result will be displayed here.");
+    }
+  </script>
+  
